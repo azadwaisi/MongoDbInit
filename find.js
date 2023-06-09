@@ -16,8 +16,8 @@ async function main(){
 
 
     //const result = await userCollection.find({"address.street" : {$in : ['azadi3','hasanAva']}}).toArray();
-    const result = await userCollection.find({_id : {$in : [new ObjectId("647a101f5733953ba2f404a7"),new ObjectId("647a15367e4b3f510c1edfa6")]}}).toArray();
-
+    //const result = await userCollection.find({_id : {$in : [new ObjectId("64796d9da8b348205e8c6d17"),new ObjectId("647a15367e4b3f510c1edfa6")]}}).toArray();
+    const result = await userCollection.findOne({Name:"Azad3"});
 
     //const result = await userCollection.deleteOne({_id:new ObjectId("64796d9becc94e4918c4f64f")});
 
